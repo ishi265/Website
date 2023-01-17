@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../utilities.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.css">
+    <title>Oiws Limited</title>
+</head>
+<body>
+
+    <div class="admin-grid-items-aligned">
+        <nav class="admin-navigation-side">
+            <div class="admin-logo">
+                <h2>Owis</h2>
+            </div>
+            <div class="navigation-lists">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="admin-icon fas fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./messages.html">
+                            <i class="admin-icon fas fa-envelope"></i>
+                            Messages
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./admin_projects.html">
+                            <i class="admin-icon fas fa-images"></i>
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./jobs.html">
+                            <i class="admin-icon fas fa-briefcase"></i>
+                            Jobs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="admin-icon fas fa-user"></i>
+                            Account
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="logout-admin">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="admin-icon fas fa-home"></i>
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+        </nav>
+    
+        <div class="top-nav-admin-site">
+            <div class="main-admin-area-right">
+                <div class="top-admin-part-flex-end">
+                    <div class="user-logged-in">
+                        <p>Dumisani Siwinda</p>
+                        <img src="../assets/images/team2.jpg" alt="user-logged-in">
+                    </div>
+                </div>
+            </div>
+
+            <div class="admin-main-bottom-part">
+                <h2 class="admin-headers-top">Adding items</h2>
+                <div class="adding-items-container">
+                    <div class="adding-project">
+                        <div class="top-part-adding">
+                            <i class="tab-icons fas fa-images"></i>
+                            <p>Add project</p>
+                        </div>
+                        <div class="button-flex-end">
+                            <button type="button" class="adding-btns add-project-btn">Add</i></button>
+                        </div>
+                    </div>
+
+                    <div class="adding-vacancy">
+                        <div class="top-part-adding">
+                            <i class="tab-icons fas fa-briefcase"></i>
+                            <p>Add vacancy</p>
+                        </div>
+                        <div class="button-flex-end">
+                            <button type="button" class="adding-btns add-vacancy">Add</i></button>
+                        </div>
+                    </div>
+
+                    <div class="adding-more">
+                        <div class="top-part-adding">
+                            <i class="tab-icons fas fa-user-lock"></i>
+                            <p>Add Adminstrator</p>
+                        </div>
+                        <div class="button-flex-end">
+                            <button type="button" class="adding-btns">Add</i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- all modals -->
+
+                <!-- project-adding-modal -->
+                <div class="project-modal-overlay">
+                    <div class="project-modal">
+                        <button type="button" class="project-close"><i class="fas fa-times"></i></button>
+
+                        <form action="" class="adding-proj">
+                            <h3>Add a project</h3>
+
+                            <h4>Project title</h4>
+                            <input type="text" class="input-project" placeholder="project title">
+
+                            <h4>Year</h4>
+                            <input type="date" class="input-project">
+
+                            <h4>Location</h4>
+                            <input type="text" class="input-project" placeholder="project title">
+
+                            <h4>Client</h4>
+                            <input type="text" class="input-project" placeholder="project title">
+
+                            <h4>Project title</h4>
+                            <input type="file" class="input-project img-input" placeholder="project title">
+
+                            <h4>Description</h4>
+                            <textarea name="" id="" class="proj-textarea" placeholder="Description"></textarea>
+
+                            <input type="submit" class="btn" value="Add Project">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="add-vacancy-modal-overlay">
+                    <div class="vacancy-modal">
+                        <button type="button" class="vacancy-close"><i class="fas fa-times"></i></button>
+
+                        <form action="" class="add-vacancy">
+                            <h3>Add a vacancy</h3>
+
+                            <div class="vacancy-input-text">
+                                <div class="p-title">
+                                    <h4>Post title</h4>
+                                    <input type="text" class="input-vacancy" placeholder="Post Title">
+                                </div>
+                                <div class="p-contract">
+                                    <h4>Contract type</h4>
+                                    <input type="text" class="input-vacancy" placeholder="Contract Type">
+                                </div>
+                                <div class="p-location">
+                                    <h4>Location</h4>
+                                    <input type="text" class="input-vacancy" placeholder="Location">
+                                </div>
+                            </div>
+                            <h4>Description</h4>
+                            <textarea name="" id="" class="vacancy-textarea" placeholder="Description"></textarea>
+                            <h4>Area of Responsibility</h4>
+                            <div class="responsibility-boxes">
+                                <textarea name="" id="" placeholder="Responsibilities comma separated or any other"></textarea>
+                            </div>
+                            <h4>Qualifications</h4>
+                            <div class="qualification-boxes">
+                                <textarea name="" id="" placeholder="Qualifications comma separated or other"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="./AdminJS/home.js"></script>
+    
+</body>
+</html>
